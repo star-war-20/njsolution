@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landscaping & Driveways | NJ Home Solutions Glasgow</title>
+    <meta name="description"
+        content="Professional landscaping and driveway services in Glasgow. From garden design to block paving, we transform your outdoor spaces.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#56a98d',
+                        'primary-dark': '#458d75',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="font-sans antialiased text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-primary sticky top-0 z-50 shadow-md">
+        <nav class="container mx-auto px-6 flex justify-between items-center py-4">
+            <!-- Logo (Left) -->
+            <div class="flex-1 flex justify-start">
+                <a href="index.html" class="flex items-center">
+                    <img src="assets/images/logo.png" alt="NJ Home Solutions Logo" class="h-12 w-auto">
+                </a>
+            </div>
+
+            <!-- Navigation (Center) -->
+            <div class="hidden lg:flex flex-none justify-center">
+                <ul class="flex items-center space-x-6 lg:space-x-10">
+                    <li><a href="index.html"
+                            class="text-white font-medium hover:text-white/80 transition-colors py-2 inline-block">Home</a>
+                    </li>
+                    <li class="relative group">
+                        <a href="index.html#services"
+                            class="text-white font-medium hover:text-white/80 transition-colors flex items-center py-2">
+                            Services Offered
+                            <svg class="w-3 h-3 ml-1.5 transform group-hover:rotate-180 transition-transform duration-300"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </a>
+                        <!-- Dropdown Menu -->
+                        <div
+                            class="absolute left-0 top-full w-72 bg-primary shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 border-t border-white/10">
+                            <ul class="py-2">
+                                <li><a href="handyman.html"
+                                        class="block px-6 py-3 text-white hover:bg-white/10 transition-colors border-b border-white/5">Handyman
+                                        services</a></li>
+                                <li><a href="joinery.html"
+                                        class="block px-6 py-3 text-white hover:bg-white/10 transition-colors border-b border-white/5">Joinery</a>
+                                </li>
+                                <li><a href="electrical.html"
+                                        class="block px-6 py-3 text-white hover:bg-white/10 transition-colors border-b border-white/5">Electrical
+                                        work</a></li>
+                                <li><a href="plumbing.html"
+                                        class="block px-6 py-3 text-white hover:bg-white/10 transition-colors border-b border-white/5">Plumbing</a>
+                                </li>
+                                <li><a href="plastering.html"
+                                        class="block px-6 py-3 text-white hover:bg-white/10 transition-colors border-b border-white/5">Plastering</a>
+                                </li>
+                                <li><a href="painting.html"
+                                        class="block px-6 py-3 text-white hover:bg-white/10 transition-colors border-b border-white/5">Painting
+                                        & decorating</a></li>
+                                <li><a href="renovation.html"
+                                        class="block px-6 py-3 text-white hover:bg-white/10 transition-colors border-b border-white/5 text-sm leading-tight">Property
+                                        maintenance and renovation</a></li>
+
+                                <li><a href="waste-removal.html"
+                                        class="block px-6 py-3 text-white hover:bg-white/10 transition-colors text-sm leading-tight">Furniture
+                                        / waste removal</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="index.html#reviews"
+                            class="text-white font-medium hover:text-white/80 transition-colors py-2 inline-block">Reviews</a>
+                    </li>
+                    <li><a href="about.html"
+                            class="text-white font-medium hover:text-white/80 transition-colors py-2 inline-block">About
+                            Us</a></li>
+                    <li><a href="blog.html"
+                            class="text-white font-medium hover:text-white/80 transition-colors py-2 inline-block">Blog</a>
+                    </li>
+                    <li><a href="contact.html"
+                            class="text-white font-medium hover:text-white/80 transition-colors py-2 inline-block">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- CTA & Mobile Toggle (Right) -->
+            <div class="flex-1 flex justify-end items-center space-x-4">
+                <!-- Header Social Icons -->
+                <div class="hidden xl:flex items-center space-x-4 border-r border-white/20 pr-4 mr-2 ml-8">
+                    <a href="https://g.page/r/CXleUTHBXanCEBM/" target="_blank" class="text-white hover:text-white/70 transition-colors flex items-center justify-center">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.66l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+                    </a>
+                    <a href="https://www.facebook.com/NJHomeSolutionsGlasgow/" target="_blank"
+                        class="text-white hover:text-white/70 transition-colors">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                        </svg>
+                    </a>
+                    <a href="https://www.instagram.com/nj_home_solutions/" target="_blank"
+                        class="text-white hover:text-white/70 transition-colors">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204 013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4.162 4.162 0 110-8.324 4.162 4.162 0 010 8.324zM18.406 3.994a1.44 1.44 0 100 2.88 1.44 1.44 0 000-2.88z" />
+                        </svg>
+                    </a>
+                    <a href="https://www.pinterest.com/njhomesolutions/" target="_blank"
+                        class="text-white hover:text-white/70 transition-colors">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.162-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.401.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.951-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.354-.629-2.758-1.379l-.749 2.848c-.269 1.045-1.004 2.352-1.498 3.146 1.123.345 2.306.535 3.55.535 6.607 0 11.985-5.365 11.985-11.987C23.97 5.367 18.633 0 12.017 0z" />
+                        </svg>
+                    </a>
+                </div>
+                <a href="contact.html"
+                    class="hidden md:inline-flex bg-white text-primary font-bold py-2.5 px-6 rounded-full hover:bg-gray-100 transition-colors shadow-lg whitespace-nowrap">Get
+                    a Quote</a>
+                <!-- Mobile Menu Toggle -->
+                <div class="lg:hidden">
+                    <button class="text-white">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Service Hero Section (Simplified) -->
+        <section class="relative pt-32 pb-20 px-6 bg-cover bg-center overflow-hidden"
+            style="background-image: url('assets/images/landscaping_bg.png');">
+            <!-- Stronger Overlay for Readability -->
+            <div class="absolute inset-0 bg-gradient-to-r from-black/95 via-black/80 to-transparent z-0"></div>
+
+            <div class="container mx-auto relative z-10">
+                <div class="max-w-4xl">
+                    <span
+                        class="inline-flex items-center px-4 py-1.5 rounded-full bg-primary/30 border border-primary/50 text-primary font-bold tracking-widest uppercase text-xs mb-6 animate-fade-in shadow-lg backdrop-blur-sm">
+                        <span class="w-2 h-2 bg-primary rounded-full mr-2 animate-pulse"></span>
+                        Outdoor Living
+                    </span>
+                    <h1
+                        class="text-5xl md:text-7xl font-black text-white mb-10 leading-tight animate-fade-in drop-shadow-2xl">
+                        <span
+                            class="text-primary text-stroke-white drop-shadow-[0_5px_15px_rgba(0,0,0,0.5)]">Landscaping</span>
+                        Design
+                    </h1>
+                    <div class="flex flex-wrap gap-4 animate-fade-in" style="animation-delay: 0.1s;">
+                        <a href="contact.html"
+                            class="bg-primary text-white font-bold py-4 px-10 rounded-2xl hover:bg-primary-dark transition-all transform hover:-translate-y-1 shadow-lg shadow-primary/20">Design
+                            Your Garden</a>
+                        <a href="#details"
+                            class="bg-white/10 backdrop-blur-md text-white font-bold py-4 px-10 rounded-2xl hover:bg-white/20 transition-all border border-white/20">Our
+                            Gallery</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Service Content Section -->
+        <section id="details" class="py-32 bg-gray-50 relative">
+            <div class="container mx-auto px-6">
+                <div class="grid lg:grid-cols-2 gap-24 items-center mb-32">
+                    <!-- Left: High-End Image -->
+                    <div class="relative group">
+                        <div
+                            class="absolute -inset-4 bg-primary/20 rounded-[3rem] blur-2xl group-hover:bg-primary/30 transition-all duration-700">
+                        </div>
+                        <div class="relative rounded-[2.5rem] overflow-hidden shadow-2xl">
+                            <img src="assets/images/landscaping_bg.png" alt="Landscaping and driveway work"
+                                class="w-full h-auto transition-transform duration-1000 group-hover:scale-105">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+                            <div class="absolute bottom-8 left-8">
+                                <div
+                                    class="bg-white/20 backdrop-blur-xl border border-white/30 px-6 py-3 rounded-2xl text-white font-bold">
+                                    Natural Beauty
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Narrative -->
+                    <div class="space-y-10">
+                        <div class="space-y-4">
+                            <h2 class="text-4xl md:text-5xl font-black text-gray-900 leading-tight">
+                                Your Vision <br><span
+                                    class="text-primary underline decoration-primary/20 underline-offset-8">Grown to
+                                    Life</span>
+                            </h2>
+                            <p class="text-xl text-gray-600 leading-relaxed font-light">
+                                From contemporary patios to lush, biodiverse gardens, we manage every aspect of your
+                                outdoor transformation. We combine hardscaping expertise with a deep understanding of
+                                horticulture.
+                            </p>
+                        </div>
+
+                        <div class="grid gap-6">
+                            <div
+                                class="p-6 bg-white rounded-3xl shadow-sm border border-gray-100 flex items-start space-x-6 hover:shadow-md transition-all">
+                                <div
+                                    class="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center text-primary shrink-0">
+                                    <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="text-lg font-bold text-gray-900">Bespoke Paving</h4>
+                                    <p class="text-gray-500 leading-relaxed">We use natural stone, porcelain, and
+                                        high-end timber to create durable and stunning hard surfaces.</p>
+                                </div>
+                            </div>
+                            <div
+                                class="p-6 bg-white rounded-3xl shadow-sm border border-gray-100 flex items-start space-x-6 hover:shadow-md transition-all">
+                                <div
+                                    class="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center text-primary shrink-0">
+                                    <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5S19.832 5.477 21 6.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="text-lg font-bold text-gray-900">Landscape Design</h4>
+                                    <p class="text-gray-500 leading-relaxed">Our designers work with you to plan layouts
+                                        that maximize space, light, and functionality.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Expertise Grid -->
+                <div class="text-center mb-16">
+                    <h3 class="text-3xl md:text-4xl font-black text-gray-900 mb-4">Our Landscaping Skills</h3>
+                    <p class="text-gray-500 max-w-2xl mx-auto">Complete outdoor solutions for every property type.</p>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Card 1 -->
+                    <div
+                        class="group bg-white p-10 rounded-[2.5rem] shadow-sm border border-gray-100 hover:shadow-2xl hover:shadow-primary/10 hover:-translate-y-2 transition-all duration-500">
+                        <div
+                            class="w-16 h-16 bg-primary/5 rounded-[1.5rem] flex items-center justify-center text-primary mb-8 group-hover:bg-primary group-hover:text-white transition-all duration-500">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4">
+                                </path>
+                            </svg>
+                        </div>
+                        <h4 class="text-xl font-bold text-gray-900 mb-4">Driveways</h4>
+                        <p class="text-gray-500 text-sm leading-relaxed">Premium block paving, resin, and gravel
+                            solutions that make a lasting first impression.</p>
+                    </div>
+                    <!-- Card 2 -->
+                    <div
+                        class="group bg-white p-10 rounded-[2.5rem] shadow-sm border border-gray-100 hover:shadow-2xl hover:shadow-primary/10 hover:-translate-y-2 transition-all duration-500">
+                        <div
+                            class="w-16 h-16 bg-primary/5 rounded-[1.5rem] flex items-center justify-center text-primary mb-8 group-hover:bg-primary group-hover:text-white transition-all duration-500">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h4 class="text-xl font-bold text-gray-900 mb-4">Patios & Decks</h4>
+                        <p class="text-gray-500 text-sm leading-relaxed">Creating the perfect space for alfresco dining
+                            and social gatherings.</p>
+                    </div>
+                    <!-- Card 3 -->
+                    <div
+                        class="group bg-white p-10 rounded-[2.5rem] shadow-sm border border-gray-100 hover:shadow-2xl hover:shadow-primary/10 hover:-translate-y-2 transition-all duration-500">
+                        <div
+                            class="w-16 h-16 bg-primary/5 rounded-[1.5rem] flex items-center justify-center text-primary mb-8 group-hover:bg-primary group-hover:text-white transition-all duration-500">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5S19.832 5.477 21 6.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253">
+                                </path>
+                            </svg>
+                        </div>
+                        <h4 class="text-xl font-bold text-gray-900 mb-4">Garden Walling</h4>
+                        <p class="text-gray-500 text-sm leading-relaxed">Structural and decorative walls in brick, stone,
+                            or contemporary materials.</p>
+                    </div>
+                    <!-- Card 4 -->
+                    <div
+                        class="group bg-white p-10 rounded-[2.5rem] shadow-sm border border-gray-100 hover:shadow-2xl hover:shadow-primary/10 hover:-translate-y-2 transition-all duration-500">
+                        <div
+                            class="w-16 h-16 bg-primary/5 rounded-[1.5rem] flex items-center justify-center text-primary mb-8 group-hover:bg-primary group-hover:text-white transition-all duration-500">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                            </svg>
+                        </div>
+                        <h4 class="text-xl font-bold text-gray-900 mb-4">Turfing & Plants</h4>
+                        <p class="text-gray-500 text-sm leading-relaxed">Premium lawn installation and expert planting
+                            schemes for year-round color.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How We Work Section -->
+        <section class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <span class="text-primary font-bold tracking-widest uppercase text-sm">Our Process</span>
+                    <h2 class="text-3xl md:text-4xl font-black text-gray-900 mt-2 mb-4">How We Work</h2>
+                    <p class="text-gray-500 max-w-2xl mx-auto">Beautiful outdoor spaces designed and built to last, from
+                        initial design to finished project.</p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-10">
+                    <div class="text-center group">
+                        <div
+                            class="w-20 h-20 bg-primary rounded-full flex items-center justify-center text-white text-3xl font-black mx-auto mb-6 shadow-xl shadow-primary/30 group-hover:scale-110 transition-transform duration-300">
+                            1</div>
+                        <h4 class="text-xl font-bold text-gray-900 mb-3">Site Survey</h4>
+                        <p class="text-gray-500 leading-relaxed">We visit your property to survey the outdoor space,
+                            discuss your ideas and requirements, and assess access and materials needed.</p>
+                    </div>
+                    <div class="text-center group">
+                        <div
+                            class="w-20 h-20 bg-primary rounded-full flex items-center justify-center text-white text-3xl font-black mx-auto mb-6 shadow-xl shadow-primary/30 group-hover:scale-110 transition-transform duration-300">
+                            2</div>
+                        <h4 class="text-xl font-bold text-gray-900 mb-3">Design & Quote</h4>
+                        <p class="text-gray-500 leading-relaxed">We provide a clear fixed-price quotation covering all
+                            labour and materials. No hidden costs — the price you see is the price you pay.</p>
+                    </div>
+                    <div class="text-center group">
+                        <div
+                            class="w-20 h-20 bg-primary rounded-full flex items-center justify-center text-white text-3xl font-black mx-auto mb-6 shadow-xl shadow-primary/30 group-hover:scale-110 transition-transform duration-300">
+                            3</div>
+                        <h4 class="text-xl font-bold text-gray-900 mb-3">Professional Build</h4>
+                        <p class="text-gray-500 leading-relaxed">Our team carries out all groundwork, laying, and
+                            finishing to a high standard, clearing all waste and leaving your space pristine.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-16 bg-primary">
+            <div class="container mx-auto px-6">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                    <div class="group">
+                        <p
+                            class="text-5xl font-black text-white mb-2 group-hover:scale-110 transition-transform duration-300">
+                            500+</p>
+                        <p class="text-white/70 font-semibold uppercase tracking-widest text-xs">Jobs Completed</p>
+                    </div>
+                    <div class="group">
+                        <p
+                            class="text-5xl font-black text-white mb-2 group-hover:scale-110 transition-transform duration-300">
+                            10+</p>
+                        <p class="text-white/70 font-semibold uppercase tracking-widest text-xs">Years Experience</p>
+                    </div>
+                    <div class="group">
+                        <p
+                            class="text-5xl font-black text-white mb-2 group-hover:scale-110 transition-transform duration-300">
+                            5★</p>
+                        <p class="text-white/70 font-semibold uppercase tracking-widest text-xs">Google Rating</p>
+                    </div>
+                    <div class="group">
+                        <p
+                            class="text-5xl font-black text-white mb-2 group-hover:scale-110 transition-transform duration-300">
+                            100%</p>
+                        <p class="text-white/70 font-semibold uppercase tracking-widest text-xs">Satisfaction Rate</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-20 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <div class="max-w-3xl mx-auto">
+                    <div class="text-center mb-12">
+                        <span class="text-primary font-bold tracking-widest uppercase text-sm">FAQ</span>
+                        <h2 class="text-3xl md:text-4xl font-black text-gray-900 mt-2 mb-4">Landscaping Questions
+                            Answered</h2>
+                        <p class="text-gray-500">Common queries from our Glasgow customers about landscaping and
+                            driveways.</p>
+                    </div>
+                    <div class="space-y-4">
+                        <details class="group bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
+                            <summary
+                                class="flex items-center justify-between p-6 cursor-pointer font-bold text-gray-900 hover:text-primary transition-colors list-none">
+                                What types of driveway do you install?<svg
+                                    class="w-5 h-5 text-primary shrink-0 group-open:rotate-180 transition-transform duration-300"
+                                    fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7"></path>
+                                </svg></summary>
+                            <div class="px-6 pb-6 text-gray-500 leading-relaxed border-t border-gray-50 pt-4">We install
+                                block paving, tarmac, resin-bound, and gravel driveways. We'll advise on the best option
+                                for your budget, property style, and usage requirements during our free site assessment.
+                            </div>
+                        </details>
+                        <details class="group bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
+                            <summary
+                                class="flex items-center justify-between p-6 cursor-pointer font-bold text-gray-900 hover:text-primary transition-colors list-none">
+                                Do you need planning permission for a new driveway?<svg
+                                    class="w-5 h-5 text-primary shrink-0 group-open:rotate-180 transition-transform duration-300"
+                                    fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7"></path>
+                                </svg></summary>
+                            <div class="px-6 pb-6 text-gray-500 leading-relaxed border-t border-gray-50 pt-4">In most
+                                cases, no — front driveways under 5m² using permeable materials do not require planning
+                                permission in Scotland. We'll advise you on any permissions needed as part of our
+                                initial assessment and handle all guidance accordingly.</div>
+                        </details>
+                        <details class="group bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
+                            <summary
+                                class="flex items-center justify-between p-6 cursor-pointer font-bold text-gray-900 hover:text-primary transition-colors list-none">
+                                Can you clear and redesign an overgrown garden?<svg
+                                    class="w-5 h-5 text-primary shrink-0 group-open:rotate-180 transition-transform duration-300"
+                                    fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7"></path>
+                                </svg></summary>
+                            <div class="px-6 pb-6 text-gray-500 leading-relaxed border-t border-gray-50 pt-4">Absolutely.
+                                Garden clearance, levelling, turfing, raised beds, and full landscaping redesigns are
+                                all within our scope. We'll help transform even the most neglected outdoor spaces into
+                                something you'll love.</div>
+                        </details>
+                        <details class="group bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
+                            <summary
+                                class="flex items-center justify-between p-6 cursor-pointer font-bold text-gray-900 hover:text-primary transition-colors list-none">
+                                How long does a block paved driveway take?<svg
+                                    class="w-5 h-5 text-primary shrink-0 group-open:rotate-180 transition-transform duration-300"
+                                    fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7"></path>
+                                </svg></summary>
+                            <div class="px-6 pb-6 text-gray-500 leading-relaxed border-t border-gray-50 pt-4">For an
+                                average-sized driveway, block paving typically takes 3–5 days from excavation to
+                                completion. This includes removing the old surface, laying a stable sub-base, and
+                                carefully laying and pointing all the paving blocks.</div>
+                        </details>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Related Services -->
+        <section class="py-20 bg-white relative overflow-hidden">
+            <!-- Background Decorative Blob (Bottom Right) -->
+            <div class="absolute -bottom-40 -right-40 w-[600px] h-[600px] bg-[#FFF9E6] rounded-full opacity-70 blur-3xl z-0"></div>
+            
+            <div class="container mx-auto px-6 relative z-10">
+                <div class="text-center mb-12">
+                    <span class="text-primary font-bold tracking-widest uppercase text-sm">Explore More</span>
+                    <h2 class="text-3xl md:text-4xl font-black text-gray-900 mt-2 mb-4">Related Services</h2>
+                    <p class="text-gray-500">Comprehensive property maintenance across all trades in Glasgow.</p>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <a href="handyman.html"
+                        class="group block p-8 bg-gray-50 rounded-3xl border border-gray-100 hover:border-primary hover:bg-primary/5 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                        <div
+                            class="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center text-primary mb-5 group-hover:bg-primary group-hover:text-white transition-all duration-300">
+                            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 011-1h1a2 2 0 100-4H7a1 1 0 01-1-1V7a1 1 0 011-1h3a1 1 0 011-1V4z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h4 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors">
+                            Handyman</h4>
+                        <p class="text-gray-500 text-sm leading-relaxed">Fast, professional repairs and small fixes for
+                            your home.</p>
+                    </a>
+                    <a href="electrical.html"
+                        class="group block p-8 bg-gray-50 rounded-3xl border border-gray-100 hover:border-primary hover:bg-primary/5 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                        <div
+                            class="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center text-primary mb-5 group-hover:bg-primary group-hover:text-white transition-all duration-300">
+                            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                            </svg>
+                        </div>
+                        <h4 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors">
+                            Electrical</h4>
+                        <p class="text-gray-500 text-sm leading-relaxed">Certified electrical repairs, installations, and
+                            safety inspections.</p>
+                    </a>
+                    <a href="plumbing.html"
+                        class="group block p-8 bg-gray-50 rounded-3xl border border-gray-100 hover:border-primary hover:bg-primary/5 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                        <div
+                            class="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center text-primary mb-5 group-hover:bg-primary group-hover:text-white transition-all duration-300">
+                            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.628.281a2 2 0 01-1.79 0l-.628-.281a6 6 0 00-3.86-.517l-2.387.477a2 2 0 00-1.022.547l-1.159 1.159a2 2 0 000 2.828l1.727 1.727a2 2 0 002.828 0l1.159-1.159a2 2 0 00.547-1.022l.477-2.387a6 6 0 00-.517-3.86l-.281-.628a2 2 0 010-1.79l.281-.628a6 6 0 00.517-3.86l-.477-2.387a2 2 0 00-.547-1.022L6.159 4.828a2 2 0 00-2.828 0L1.604 6.555a2 2 0 000 2.828l1.159 1.159c.28.28.604.484.957.604l2.387.477a6 6 0 003.86-.517l.628-.281a2 2 0 011.79 0l.628.281a6 6 0 003.86.517l2.387-.477a2 2 0 001.022-.547l1.159-1.159a2 2 0 000-2.828l-1.727-1.727a2 2 0 00-2.828 0l-1.159 1.159z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h4 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors">
+                            Plumbing</h4>
+                        <p class="text-gray-500 text-sm leading-relaxed">Expert plumbing repairs, bathroom installations,
+                            and emergency fixes.</p>
+                    </a>
+                    <a href="plastering.html"
+                        class="group block p-8 bg-gray-50 rounded-3xl border border-gray-100 hover:border-primary hover:bg-primary/5 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                        <div
+                            class="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center text-primary mb-5 group-hover:bg-primary group-hover:text-white transition-all duration-300">
+                            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h16M4 18h7"></path>
+                            </svg>
+                        </div>
+                        <h4 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors">
+                            Plastering</h4>
+                        <p class="text-gray-500 text-sm leading-relaxed">Flawless finishes for your walls and ceilings,
+                            ready for decorating.</p>
+                    </a>
+                    <a href="painting.html"
+                        class="group block p-8 bg-gray-50 rounded-3xl border border-gray-100 hover:border-primary hover:bg-primary/5 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                        <div
+                            class="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center text-primary mb-5 group-hover:bg-primary group-hover:text-white transition-all duration-300">
+                            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01">
+                                </path>
+                            </svg>
+                        </div>
+                        <h4 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors">
+                            Painting</h4>
+                        <p class="text-gray-500 text-sm leading-relaxed">Professional interior and exterior decorating
+                            with premium finishes.</p>
+                    </a>
+                    <a href="joinery.html"
+                        class="group block p-8 bg-gray-50 rounded-3xl border border-gray-100 hover:border-primary hover:bg-primary/5 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                        <div
+                            class="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center text-primary mb-5 group-hover:bg-primary group-hover:text-white transition-all duration-300">
+                            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M14.121 14.121L19 19m-7-7l7-7m-7 7l-2.879 2.879M12 12L9.121 9.121m0 5.758L5 19m0-14l4.121 4.121">
+                                </path>
+                            </svg>
+                        </div>
+                        <h4 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors">
+                            Joinery</h4>
+                        <p class="text-gray-500 text-sm leading-relaxed">Bespoke woodwork, door hanging, and custom
+                            furniture solutions.</p>
+                    </a>
+                    <a href="renovation.html"
+                        class="group block p-8 bg-gray-50 rounded-3xl border border-gray-100 hover:border-primary hover:bg-primary/5 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                        <div
+                            class="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center text-primary mb-5 group-hover:bg-primary group-hover:text-white transition-all duration-300">
+                            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6">
+                                </path>
+                            </svg>
+                        </div>
+                        <h4 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors">
+                            Renovation</h4>
+                        <p class="text-gray-500 text-sm leading-relaxed">Complete home transformations and property maintenance experts.</p>
+                    </a>
+                    <a href="waste-removal.html"
+                        class="group block p-8 bg-gray-50 rounded-3xl border border-gray-100 hover:border-primary hover:bg-primary/5 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                        <div
+                            class="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center text-primary mb-5 group-hover:bg-primary group-hover:text-white transition-all duration-300">
+                            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16">
+                                </path>
+                            </svg>
+                        </div>
+                        <h4 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors">
+                            Waste Removal</h4>
+                        <p class="text-gray-500 text-sm leading-relaxed">Efficient and responsible clearance for homes
+                            and businesses.</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section: Glassmorphism -->
+        <section class="py-24 bg-gray-900 relative overflow-hidden">
+            <div class="absolute inset-0 bg-primary opacity-5 animate-pulse"></div>
+            <div class="container mx-auto px-6 relative z-10 text-center">
+                <div class="max-w-3xl mx-auto">
+                    <h2 class="text-4xl md:text-5xl font-black text-white mb-8">Elevate Your Outdoors</h2>
+                    <p class="text-xl text-white/60 mb-12 font-light">Join Glasgow's most satisfied homeowners.
+                        Professional landscaping is just a click away.</p>
+                    <div class="flex flex-col sm:flex-row items-center justify-center gap-6">
+                        <a href="contact.html"
+                            class="w-full sm:w-auto bg-primary text-white font-bold py-5 px-12 rounded-2xl hover:shadow-2xl hover:shadow-primary/40 transition-all">Get
+                            a Free Design Quote</a>
+                        <a href="tel:+447825625056"
+                            class="w-full sm:w-auto bg-white/5 backdrop-blur-md text-white font-bold py-5 px-12 rounded-2xl border border-white/10 hover:bg-white/10 transition-all">Call
+                            Now: 07825 625 056</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 pt-20 pb-10">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+
+                <!-- Company Info -->
+                <div class="space-y-6">
+                    <img src="assets/images/logo.png" alt="NJ Home Solutions Logo" class="h-12 w-auto">
+                    <p class="text-gray-400 leading-relaxed">
+                        Glasgow's leading property maintenance experts. We provide high-quality handyman, renovation,
+                        and repair services for homes and businesses across the region.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="https://g.page/r/CXleUTHBXanCEBM/" target="_blank" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-[#4285F4] hover:text-white transition-all duration-300">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.66l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+                        </a>
+                        <a href="https://www.facebook.com/NJHomeSolutionsGlasgow/" target="_blank"
+                            class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-[#1877F2] hover:text-white transition-all duration-300">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                            </svg>
+                        </a>
+                        <a href="https://www.instagram.com/nj_home_solutions/" target="_blank"
+                            class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-gradient-to-tr hover:from-[#f9ce34] hover:via-[#ee2a7b] hover:to-[#6228d7] hover:text-white transition-all duration-300">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204 013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4.162 4.162 0 110-8.324 4.162 4.162 0 010 8.324zM18.406 3.994a1.44 1.44 0 100 2.88 1.44 1.44 0 000-2.88z" />
+                            </svg>
+                        </a>
+                        <a href="https://www.pinterest.com/njhomesolutions/" target="_blank"
+                            class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-[#E60023] hover:text-white transition-all duration-300">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.162-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.401.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.951-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.354-.629-2.758-1.379l-.749 2.848c-.269 1.045-1.004 2.352-1.498 3.146 1.123.345 2.306.535 3.55.535 6.607 0 11.985-5.365 11.985-11.987C23.97 5.367 18.633 0 12.017 0z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-white text-xl font-bold mb-8 relative inline-block">
+                        Quick Links
+                        <span class="absolute bottom-[-8px] left-0 w-12 h-1 bg-primary rounded-full"></span>
+                    </h4>
+                    <ul class="space-y-4">
+                        <li><a href="index.html"
+                                class="hover:text-primary hover:translate-x-2 transition-all duration-300 inline-block">Home</a>
+                        </li>
+                        <li><a href="about.html"
+                                class="hover:text-primary hover:translate-x-2 transition-all duration-300 inline-block">About
+                                Us</a></li>
+                        <li><a href="contact.html"
+                                class="hover:text-primary hover:translate-x-2 transition-all duration-300 inline-block">Contact</a>
+                        </li>
+                        <li><a href="index.html#reviews"
+                                class="hover:text-primary hover:translate-x-2 transition-all duration-300 inline-block">Reviews</a>
+                        </li>
+                        <li><a href="blog.html"
+                                class="hover:text-primary hover:translate-x-2 transition-all duration-300 inline-block">Blog</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h4 class="text-white text-xl font-bold mb-8 relative inline-block">
+                        Our Services
+                        <span class="absolute bottom-[-8px] left-0 w-12 h-1 bg-primary rounded-full"></span>
+                    </h4>
+                    <ul class="space-y-4">
+                        <li><a href="handyman.html"
+                                class="hover:text-primary hover:translate-x-2 transition-all duration-300 inline-block">Handyman
+                                Services</a></li>
+                        <li><a href="joinery.html"
+                                class="hover:text-primary hover:translate-x-2 transition-all duration-300 inline-block">Joinery</a>
+                        </li>
+                        <li><a href="electrical.html"
+                                class="hover:text-primary hover:translate-x-2 transition-all duration-300 inline-block">Electrical
+                                Work</a></li>
+                        <li><a href="plumbing.html"
+                                class="hover:text-primary hover:translate-x-2 transition-all duration-300 inline-block">Plumbing</a>
+                        </li>
+                        <li><a href="plastering.html"
+                                class="hover:text-primary hover:translate-x-2 transition-all duration-300 inline-block">Plastering</a>
+                        </li>
+                        <li><a href="painting.html"
+                                class="hover:text-primary hover:translate-x-2 transition-all duration-300 inline-block">Painting
+                                & Decorating</a></li>
+                        <li><a href="renovation.html"
+                                class="hover:text-primary hover:translate-x-2 transition-all duration-300 inline-block">Property
+                                Maintenance & Renovation</a></li>
+
+                        <li><a href="waste-removal.html"
+                                class="hover:text-primary hover:translate-x-2 transition-all duration-300 inline-block">Furniture
+                                / Waste Removal</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="text-white text-xl font-bold mb-8 relative inline-block">
+                        Contact Us
+                        <span class="absolute bottom-[-8px] left-0 w-12 h-1 bg-primary rounded-full"></span>
+                    </h4>
+                    <ul class="space-y-6">
+                        <li class="flex items-start space-x-4">
+                            <div class="text-primary mt-1">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z">
+                                    </path>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                </svg>
+                            </div>
+                            <span class="text-gray-400">8 Carna Dr,<br>Glasgow, G44 5BB</span>
+                        </li>
+                        <li class="flex items-center space-x-4">
+                            <div class="text-primary">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <a href="tel:+447825625056"
+                                class="text-gray-400 hover:text-primary transition-colors duration-300">07825 625
+                                056</a>
+                        </li>
+                        <li class="flex items-center space-x-4">
+                            <div class="text-primary">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                    <path
+                                        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                                </svg>
+                            </div>
+                            <a href="https://wa.me/447825625056" target="_blank"
+                                class="text-gray-400 hover:text-[#25D366] transition-colors duration-300">07825 625
+                                056</a>
+                        </li>
+                        <li class="flex items-center space-x-4">
+                            <div class="text-primary">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                            </div>
+                            <span class="text-gray-400">Mon - Sat: 8:00am - 4:00pm</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div
+                class="border-t border-gray-800 pt-8 mt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
+                <div class="text-center md:text-left mb-4 md:mb-0">
+                    <p class="text-gray-300 text-base font-semibold">&copy; 2026 NJ Home Solutions. All Rights Reserved.
+                    </p>
+                    <p class="text-gray-400 text-sm mt-1.5 font-medium">
+                        Design and Developed by <a href="https://kyleinfotech.co.in/" target="_blank"
+                            class="text-primary hover:text-primary/80 transition-colors">Kyle Infotech</a>
+                    </p>
+                </div>
+                <div
+                    class="flex flex-wrap justify-center md:justify-end gap-x-8 gap-y-2 mt-4 md:mt-0 text-base font-semibold">
+                    <a href="privacy-policy.html" class="text-gray-400 hover:text-white transition-colors">Privacy
+                        Policy</a>
+                    <a href="cookie-policy.html" class="text-gray-400 hover:text-white transition-colors">Cookie
+                        Policy</a>
+                    <a href="terms-and-conditions.html" class="text-gray-400 hover:text-white transition-colors">Terms
+                        of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <style>
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes pulse-soft {
+
+            0%,
+            100% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0.5;
+            }
+        }
+
+        .animate-fade-in {
+            animation: fadeIn 1s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+        }
+
+        .text-stroke-white {
+            -webkit-text-stroke: 1px rgba(255, 255, 255, 0.3);
+            color: transparent;
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+
+</body>
+
+</html>
